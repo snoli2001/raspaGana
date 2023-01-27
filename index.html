@@ -1140,6 +1140,7 @@
             formContainer.remove();
             desktopRewardZone.style.width = '100%';
             const imageReward = createImage(rewardImage[100]);
+            imageReward.addEventListener('mousemove', (e) => event.preventDefault());
             desktopRaspaYGanaContainer.appendChild(imageReward);
             desktopRaspaYGanaContainer.classList.add('scale-up-center')
             pintarRaspaYGana();
