@@ -900,11 +900,11 @@
         const mobileImage = document.querySelector('.mobile_image');
         const terminosYCodicionesContainer = document.querySelector('.condiciones_container');
         const divisor = document.querySelector('.bcp_division');
-
+        const canvas = document.querySelector('canvas')
         const jsConfetti = new JSConfetti()
 
 
-        raspaYGanaContainer.addEventListener('touchmove', (e) => {
+        canvas.addEventListener('touchmove', (e) => {
             e.preventDefault();
         });
 
