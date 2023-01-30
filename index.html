@@ -2725,7 +2725,13 @@
                 if (filledInPixels > 50 && canvasExist) {
                     // canvas.parentNode.removeChild(canvas);
                     canvas.remove()
-                    jsConfetti.addConfetti()
+                    jsConfetti.addConfetti(
+                        {
+                            confettiColors: [
+                                '#0030B3', '#FF7800', '#BFC4CC', '#FF961F', '#D4AF37', '#C0C0C0',
+                            ],
+                        }
+                    )
                     raspaYGanaContainer.classList.add('shake');
                     desktopRaspaYGanaContainer.classList.add('shake');
                     const mobilePointer = document.getElementById('customPointer');
